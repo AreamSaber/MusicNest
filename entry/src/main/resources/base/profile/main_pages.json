@@ -1,0 +1,20 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/MainPage",
+    "pages/Login",
+    "pages/InstrumentList",
+    "pages/InstrumentDetail",
+    "pages/OrderCreate",
+    "pages/OrderList",
+    "pages/OrderDetail",
+    "pages/OrderRenew",
+    "pages/ReturnBooking",
+    "pages/MaintenanceCreate",
+    "pages/MaintenanceDetail",
+    "pages/ReviewCreate",
+    "pages/MyReviews",
+    "pages/Profile",
+    "pages/VerifyIdCard"
+  ]
+}

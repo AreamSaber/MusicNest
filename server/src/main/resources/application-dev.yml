@@ -1,0 +1,39 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/musicnest?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: your_mysql_password
+  data:
+    redis:
+      host: localhost
+      port: 6379
+  sql:
+    init:
+      mode: never
+      schema-locations: classpath:schema.sql
+      data-locations: classpath:data.sql
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 25MB
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+jwt:
+  secret: please-change-me-to-a-long-random-secret-at-least-32-chars
+  expire-hours: 4
+  refresh-expire-days: 7
+
+# File upload path (local storage for dev)
+app:
+  upload-path: ./static/uploads/

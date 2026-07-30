@@ -1,0 +1,19 @@
+{
+  "mockRules": {
+    "/api/v1/instruments/hot": {
+      "code": 200,
+      "message": "mock ok",
+      "data": []
+    },
+    "/api/v1/instruments/recommend": {
+      "code": 200,
+      "message": "mock ok",
+      "data": []
+    },
+    "/api/v1/instruments": {
+      "code": 200,
+      "message": "mock ok",
+      "data": { "records": [], "total": 0, "page": 1, "size": 10 }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+# ========== 依赖与构建产物 ==========
+node_modules/
+oh_modules/
+**/node_modules/
+**/oh_modules/
+**/build/
+**/dist/
+**/target/
+.cxx/
+out/
+
+# ========== IDE / 工具 ==========
+.idea/
+.vscode/
+*.iml
+.hvigor/
+.appanalyzer/
+.codegraph/
+.reasonix/
+.clangd
+.clang-format
+.clang-tidy
+**/.test
+
+# ========== 本地配置与密钥 ==========
+local.properties
+*.local
+*.local.*
+.env
+.env.*
+!.env.example
+application-local.yml
+**/application-local.yml
+
+# ========== 运行时上传/日志 ==========
+server/static/uploads/
+server/static/uploads-e2e/
+**/uploads/
+*.log
+logs/
+
+# ========== 系统与杂项 ==========
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+设计稿/
+
+# ========== 备份 ==========
+*.bak
+*.tmp

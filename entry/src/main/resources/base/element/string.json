@@ -1,0 +1,32 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "鸿音管家 - 乐器租赁与售后管理"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "鸿音管家主入口"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "鸿音管家"
+    },
+    {
+      "name": "app_name",
+      "value": "鸿音管家"
+    },
+    {
+      "name": "internet_reason",
+      "value": "用于访问网络获取乐器数据"
+    },
+    {
+      "name": "photo_reason",
+      "value": "用于上传报修照片、评价图片和身份证照片"
+    },
+    {
+      "name": "camera_reason",
+      "value": "用于拍摄报修照片和身份证照片"
+    }
+  ]
+}

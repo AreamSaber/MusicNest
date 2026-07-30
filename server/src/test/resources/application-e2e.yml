@@ -1,0 +1,36 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/musicnest_e2e?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: your_mysql_password
+  data:
+    redis:
+      host: localhost
+      port: 6379
+  sql:
+    init:
+      mode: never
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 25MB
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.nologging.NoLoggingImpl
+  global-config:
+    db-config:
+      id-type: auto
+
+jwt:
+  secret: please-change-me-to-a-long-random-secret-at-least-32-chars
+  expire-hours: 4
+  refresh-expire-days: 7
+
+app:
+  upload-path: ./static/uploads-e2e/
+
+knife4j:
+  enable: false

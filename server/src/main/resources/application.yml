@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: musicnest-server
+
+server:
+  port: 8080
+
+# Knife4j
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+knife4j:
+  enable: true
+  setting:
+    language: zh_cn
